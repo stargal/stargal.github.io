@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.96.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PopCountAlgorithm &middot; ALOHA</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="stargal.github.iocss/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="stargal.github.iocss/poole.css">
+  <link type="text/css" rel="stylesheet" href="stargal.github.iocss/syntax.css">
+  <link type="text/css" rel="stylesheet" href="stargal.github.iocss/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0c layout-reverse">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="stargal.github.io"><h1>ALOHA</h1></a>
+      <p class="lead">
+      Welcome to stargal's fossula! If you want, please contact me with <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Pw4NCQ8LDwsJDg5-Tk4RXFBS" style="text-decoration:none;">stargal's mail</a>.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="stargal.github.io">Home</a> </li>
+        <li><a href="https://github.com/stargal/"> Github </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2022. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>PopCountAlgorithm</h1>
+  <time datetime=2022-04-04T21:17:55&#43;0800 class="post-date">Mon, Apr 4, 2022</time>
+  <h2 id="population-count-algorithms">Population Count Algorithms</h2>
+<blockquote>
+<p><strong>&ldquo;Population count&rdquo; means to <!-- raw HTML omitted -->count the number of population bits in a 64-bit word.<!-- raw HTML omitted --></strong></p>
+</blockquote>
+<h4 id="here-are-some-algorithms-to-solve-the-problem">Here are some algorithms to solve the problem</h4>
+<ul>
+<li>
+<h5 id="lookaside-table">Lookaside table</h5>
+<blockquote>
+<p>With the Go&rsquo;s <code>init</code> function to precompute eight lookaside table, representing the eight bytes of the 64-bit word.</p>
+<p>The <code>inint</code> function is always used to initialize more complex variable,like data table.</p>
+<p>This kind of function may not be just one, the functions will automatically execute in the order in which they are declared</p>
+</blockquote>
+<p><!-- raw HTML omitted -->Be careful !: the init function can&rsquo;t be called or referenced<!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">popcount</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//	p[i] is the population count of i.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">p</span> [<span style="color:#ae81ff">256</span>]<span style="color:#66d9ef">byte</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">init</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">p</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">p</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">p</span>[<span style="color:#a6e22e">i</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>] <span style="color:#f92672">+</span> byte(<span style="color:#a6e22e">i</span><span style="color:#f92672">&amp;</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//	PopCount returns the population count (number of set bits) of x.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">PopCount</span>(<span style="color:#a6e22e">x</span> <span style="color:#66d9ef">uint64</span>) <span style="color:#66d9ef">int</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">res</span> <span style="color:#66d9ef">int</span> = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#ae81ff">8</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">res</span> <span style="color:#f92672">+=</span> int(<span style="color:#a6e22e">p</span>[byte(<span style="color:#a6e22e">x</span>)])
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+<li>
+<h5 id="use-the-quality-xx-1-statement-can-clear-the--rightmost--bit-of-the-64-bit-word">use the quality: <code>x&amp;(x-1)</code> statement can clear the  rightmost  bit of the 64-bit word</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>func <span style="color:#a6e22e">PopCount</span>(x uint64) <span style="color:#66d9ef">int</span> {
+</span></span><span style="display:flex;"><span>  var res <span style="color:#66d9ef">int</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> i :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>; i<span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>	res <span style="color:#f92672">+=</span> <span style="color:#66d9ef">int</span>(p[byte(x)])
+</span></span><span style="display:flex;"><span>	x <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> res
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+  <div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stargal-github-page.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

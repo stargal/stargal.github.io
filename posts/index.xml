@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ALOHA</title>
+    <link>stargal.github.io/posts/</link>
+    <description>Recent content in Posts on ALOHA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Apr 2022 21:17:55 +0800</lastBuildDate><atom:link href="stargal.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PopCountAlgorithm</title>
+      <link>stargal.github.io/posts/gopher-study/popcountalgorithm/</link>
+      <pubDate>Mon, 04 Apr 2022 21:17:55 +0800</pubDate>
+      
+      <guid>stargal.github.io/posts/gopher-study/popcountalgorithm/</guid>
+      <description>&lt;h2 id=&#34;population-count-algorithms&#34;&gt;Population Count Algorithms&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;Population count&amp;rdquo; means to &lt;!-- raw HTML omitted --&gt;count the number of population bits in a 64-bit word.&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;here-are-some-algorithms-to-solve-the-problem&#34;&gt;Here are some algorithms to solve the problem&lt;/h4&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
