@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://stargal.github.io/</loc>
+    <loc>https://stargal.github.io/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/books/</loc>
+    <loc>https://stargal.github.io/books/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/categories/</loc>
+    <loc>https://stargal.github.io/categories/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/tags/development/</loc>
+    <loc>https://stargal.github.io/tags/development/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/tags/golang/</loc>
+    <loc>https://stargal.github.io/tags/golang/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/categories/golang/</loc>
+    <loc>https://stargal.github.io/categories/golang/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</loc>
+    <loc>https://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/tags/</loc>
+    <loc>https://stargal.github.io/tags/</loc>
     <lastmod>2022-04-04T21:17:55+08:00</lastmod>
   </url><url>
-    <loc>http://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</loc>
+    <loc>https://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</loc>
   </url><url>
-    <loc>http://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</loc>
+    <loc>https://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</loc>
   </url><url>
-    <loc>http://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</loc>
+    <loc>https://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</loc>
   </url><url>
-    <loc>http://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</loc>
+    <loc>https://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</loc>
   </url>
 </urlset>

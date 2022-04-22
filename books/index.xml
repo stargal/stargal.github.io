@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on ALOHA</title>
-    <link>http://stargal.github.io/books/</link>
+    <link>https://stargal.github.io/books/</link>
     <description>Recent content in Books on ALOHA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 21:17:55 +0800</lastBuildDate><atom:link href="http://stargal.github.io/books/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2022 21:17:55 +0800</lastBuildDate><atom:link href="https://stargal.github.io/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Population Count Algorithms</title>
-      <link>http://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</link>
+      <link>https://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</link>
       <pubDate>Mon, 04 Apr 2022 21:17:55 +0800</pubDate>
       
-      <guid>http://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</guid>
+      <guid>https://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;Population count&amp;rdquo; means to &lt;!-- raw HTML omitted --&gt;count the number of population bits in a 64-bit word.&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -21,10 +21,10 @@
     
     <item>
       <title></title>
-      <link>http://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</link>
+      <link>https://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</guid>
+      <guid>https://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</guid>
       <description>\
 明确，
  只有两个slice的元素类型相同时才能赋值 关于解包是显示告诉将对应的slice作为多参数进行传递   </description>
@@ -32,28 +32,28 @@
     
     <item>
       <title></title>
-      <link>http://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</link>
+      <link>https://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</guid>
+      <guid>https://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</link>
+      <link>https://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</guid>
+      <guid>https://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</link>
+      <link>https://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</guid>
+      <guid>https://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</guid>
       <description>Variadic function with empty interface A variadic function is generally looked like this: func(t ...type){/*...*/}. The ellipsis &amp;ldquo;&amp;hellip;&amp;rdquo; in the declaration means that the function can be called with any number of arguments of the type.</description>
     </item>
     

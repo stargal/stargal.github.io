@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>development on ALOHA</title>
-    <link>http://stargal.github.io/tags/development/</link>
+    <link>https://stargal.github.io/tags/development/</link>
     <description>Recent content in development on ALOHA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 21:17:55 +0800</lastBuildDate><atom:link href="http://stargal.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2022 21:17:55 +0800</lastBuildDate><atom:link href="https://stargal.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Population Count Algorithms</title>
-      <link>http://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</link>
+      <link>https://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</link>
       <pubDate>Mon, 04 Apr 2022 21:17:55 +0800</pubDate>
       
-      <guid>http://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</guid>
+      <guid>https://stargal.github.io/books/the-go-programming-language/done/popcountalgorithm/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;Population count&amp;rdquo; means to &lt;!-- raw HTML omitted --&gt;count the number of population bits in a 64-bit word.&lt;!-- raw HTML omitted --&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
