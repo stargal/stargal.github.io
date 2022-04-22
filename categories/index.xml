@@ -2,9 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ALOHA</title>
-    <link>stargal.github.io/categories/</link>
+    <link>http://stargal.github.io/categories/</link>
     <description>Recent content in Categories on ALOHA</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="stargal.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Apr 2022 21:17:55 +0800</lastBuildDate><atom:link href="http://stargal.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang</title>
+      <link>http://stargal.github.io/categories/golang/</link>
+      <pubDate>Mon, 04 Apr 2022 21:17:55 +0800</pubDate>
+      
+      <guid>http://stargal.github.io/categories/golang/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
