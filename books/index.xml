@@ -19,43 +19,5 @@
 &lt;h4 id=&#34;here-are-some-algorithms-to-solve-the-problem&#34;&gt;Here are some algorithms to solve the problem&lt;/h4&gt;</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://stargal.github.io/books/advanced-go-programming/undone/i...-vs-...i/</guid>
-      <description>\
-明确，
- 只有两个slice的元素类型相同时才能赋值 关于解包是显示告诉将对应的slice作为多参数进行传递   </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://stargal.github.io/books/advanced-go-programming/undone/range-vs-const-itration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://stargal.github.io/books/advanced-go-programming/undone/string-vs-rune/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://stargal.github.io/books/advanced-go-programming/undone/variadic-function-with-empty-interface-/</guid>
-      <description>Variadic function with empty interface A variadic function is generally looked like this: func(t ...type){/*...*/}. The ellipsis &amp;ldquo;&amp;hellip;&amp;rdquo; in the declaration means that the function can be called with any number of arguments of the type.</description>
-    </item>
-    
   </channel>
 </rss>
