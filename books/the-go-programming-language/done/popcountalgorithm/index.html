@@ -92,13 +92,13 @@
 </span></span></code></pre></div></li>
 <li>
 <h5 id="use-the-quality-xx-1-statement-can-clear-the--rightmost--bit-of-the-64-bit-word">use the quality: <code>x&amp;(x-1)</code> statement can clear the  rightmost  bit of the 64-bit word</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>func <span style="color:#a6e22e">PopCount</span>(x uint64) <span style="color:#66d9ef">int</span> {
-</span></span><span style="display:flex;"><span>  var res <span style="color:#66d9ef">int</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> i :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>; i<span style="color:#f92672">++</span> {
-</span></span><span style="display:flex;"><span>	res <span style="color:#f92672">+=</span> <span style="color:#66d9ef">int</span>(p[byte(x)])
-</span></span><span style="display:flex;"><span>	x <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#ae81ff">8</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">PopCount</span>(<span style="color:#a6e22e">x</span> <span style="color:#66d9ef">uint64</span>) <span style="color:#66d9ef">int</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">res</span> <span style="color:#66d9ef">int</span> = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#ae81ff">8</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">res</span> <span style="color:#f92672">+=</span> int(<span style="color:#a6e22e">p</span>[byte(<span style="color:#a6e22e">x</span>)])
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#ae81ff">8</span>
 </span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> res
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div></li>
 </ul>
