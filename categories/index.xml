@@ -6,22 +6,22 @@
     <description>Recent content in Categories on ALOHA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 21:17:55 +0800</lastBuildDate><atom:link href="https://stargal.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Apr 2022 01:57:24 +0800</lastBuildDate><atom:link href="https://stargal.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Development</title>
-      <link>https://stargal.github.io/categories/development/</link>
-      <pubDate>Mon, 04 Apr 2022 21:17:55 +0800</pubDate>
+      <title>AdvancedGoProgramming</title>
+      <link>https://stargal.github.io/categories/advancedgoprogramming/</link>
+      <pubDate>Tue, 26 Apr 2022 01:57:24 +0800</pubDate>
       
-      <guid>https://stargal.github.io/categories/development/</guid>
+      <guid>https://stargal.github.io/categories/advancedgoprogramming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://stargal.github.io/categories/golang/</link>
+      <title>TheGoProgrammingLanguage</title>
+      <link>https://stargal.github.io/categories/thegoprogramminglanguage/</link>
       <pubDate>Mon, 04 Apr 2022 21:17:55 +0800</pubDate>
       
-      <guid>https://stargal.github.io/categories/golang/</guid>
+      <guid>https://stargal.github.io/categories/thegoprogramminglanguage/</guid>
       <description></description>
     </item>
     
